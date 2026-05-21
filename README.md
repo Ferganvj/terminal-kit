@@ -8,7 +8,7 @@ No bloat, no plugins, no frameworks — just a shell that feels good.
 ## Install
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/master/install.sh | bash
 ```
 
 That's it. Open a new terminal and you're done.
@@ -65,7 +65,7 @@ Green user · Blue path · Yellow branch — disappears cleanly outside git repo
 ## Uninstall
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/main/install.sh | bash -s -- --uninstall
+curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/master/install.sh | bash -s -- --uninstall
 ```
 
 Removes only the Terminal OS Kit block from your `.bashrc`. Your original config is untouched — a timestamped backup is saved automatically.

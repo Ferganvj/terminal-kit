@@ -3,7 +3,7 @@ set -euo pipefail
 
 MARKER_START="# >>> terminal-os-kit >>>"
 MARKER_END="# <<< terminal-os-kit <<<"
-REPO_URL="https://raw.githubusercontent.com/Ferganvj/terminal-kit/main/install.sh"
+REPO_URL="https://raw.githubusercontent.com/Ferganvj/terminal-kit/master/install.sh"
 
 # ── OS detection ──────────────────────────────────────────────────────────────
 OS="$(uname -s)"
@@ -66,7 +66,7 @@ cat >> "$HOME/.bashrc" << 'BASHRC_BLOCK'
 
 # >>> terminal-os-kit >>>
 # Managed by Terminal OS Kit — https://github.com/Ferganvj/terminal-kit
-# To uninstall: bash <(curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/main/install.sh) --uninstall
+# To uninstall: bash <(curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/master/install.sh) --uninstall
 
 parse_git_branch() {
   branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
