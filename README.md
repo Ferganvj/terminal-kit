@@ -13,7 +13,8 @@ curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/master/install
 
 That's it. Open a new terminal and you're done.
 
-**Requirements:** bash (Linux or macOS) — tmux optional but recommended
+**Requirements:** bash as your login shell (Linux or macOS) — tmux optional but recommended.
+macOS defaults to zsh; switch with `chsh -s /bin/bash` first, or the installer will stop.
 
 ---
 
@@ -34,7 +35,7 @@ Green user · Blue path · Yellow branch — disappears cleanly outside git repo
 - Color-coded prompt — readable at a glance without squinting
 - Useful aliases pre-loaded (`ll`, `gs`, `ga`, `gc`, `git-tree`)
 - tmux improvements — mouse support, intuitive pane splits, status bar with clock
-- Safe install — backs up your existing `.bashrc` before touching anything
+- Safe install — backs up your existing `.bashrc` and `.tmux.conf` before touching anything
 
 ---
 
@@ -47,6 +48,8 @@ Green user · Blue path · Yellow branch — disappears cleanly outside git repo
 | `ga`       | `git add`                                            |
 | `gc`       | `git commit -m`                                      |
 | `git-tree` | `git log --oneline --graph --decorate --all`         |
+
+`gs` and `gc` shadow Ghostscript and Graphviz's `gc` in interactive shells. Type `\gs` or `command gs` to reach the original; scripts are unaffected.
 
 ---
 
@@ -68,7 +71,7 @@ Green user · Blue path · Yellow branch — disappears cleanly outside git repo
 curl -sSL https://raw.githubusercontent.com/Ferganvj/terminal-kit/master/install.sh | bash -s -- --uninstall
 ```
 
-Removes only the Terminal OS Kit block from your `.bashrc`. Your original config is untouched — a timestamped backup is saved automatically.
+Removes only the Terminal OS Kit block from your `.bashrc` (a timestamped backup is saved first). If the kit installed `~/.tmux.conf`, it is removed and the config you had before install is restored; a `~/.tmux.conf` the kit didn't write is left alone.
 
 ---
 
